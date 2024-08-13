@@ -1,0 +1,113 @@
+{
+    "regions": {
+      "California": {
+        "new_pests": {
+          "description": "Warmer and wetter conditions are increasing the prevalence of pests such as Fusarium, leading to a significant decline in tomato quality.",
+          "impact": "Quality decline in tomatoes by 10-15% in impacted fields.",
+          "source": "https://link.springer.com/article/10.1007/s42398-021-00133-w, https://www.mdpi.com/2071-1050/14/19/12421"
+        },
+        "labor_productivity": {
+          "description": "High temperatures reduce the efficiency of farm labor, especially in peak summer months.",
+          "impact": "Productivity could decrease by 20% during peak heat periods.",
+          "source": "https://www.ers.usda.gov/webdocs/publications/80301/err-201.pdf"
+        },
+        "untimely_rain_drought": {
+          "description": "Severe drought conditions are leading to groundwater decline, which cannot be compensated with irrigation.",
+          "impact": "Yield declines due to drought could reach up to 30%.",
+          "source": "https://www.sciencedirect.com/science/article/pii/S0095069615000240"
+        },
+        "too_much_heat": {
+          "description": "Extended periods of extreme heat above 100°F are stressing tomato plants, affecting fruit set and quality.",
+          "impact": "Tomato yield could decrease by up to 10% by 2050 due to increased temperatures.",
+          "source": "https://www.climatecentral.org/news/california-agriculture-heat-impact"
+        },
+        "human_rights": {
+          "description": "Although less of an issue compared to other regions, the agricultural sector in California still faces challenges related to fair labor practices, especially for migrant workers.",
+          "impact": "Labor rights issues, while present, are less severe compared to regions like China and Turkey.",
+          "source": "https://www.nytimes.com/2020/07/31/us/immigration-farmworkers.html"
+        }
+      },
+      "China": {
+        "new_pests": {
+          "description": "Rising temperatures are fostering the spread of pests such as whiteflies, which are particularly damaging to tomato crops.",
+          "impact": "Tomato yields may decline by 10-15% due to pest infestations.",
+          "source": "https://www.fao.org/3/cb4769en/cb4769en.pdf, https://theconversation.com/what-a-warmer-wetter-world-means-for-insects-and-what-they-eat-102345"
+        },
+        "labor_productivity": {
+          "description": "Extreme heat reduces labor efficiency, especially in rural farming areas that rely heavily on manual labor.",
+          "impact": "A 15% drop in productivity has been observed during peak summer.",
+          "source": "https://www.mdpi.com/2071-1050/12/19/7929"
+        },
+        "untimely_rain_drought": {
+          "description": "China faces increased variability in precipitation, leading to both untimely rains and prolonged droughts, disrupting tomato cultivation.",
+          "impact": "Yield losses of up to 20% in certain regions.",
+          "source": "https://www.frontiersin.org/articles/10.3389/fpls.2019.00867/full"
+        },
+        "too_much_heat": {
+          "description": "Prolonged periods of extreme heat during the growing season are causing significant stress to tomato plants.",
+          "impact": "Yield losses could reach up to 25% in areas experiencing frequent heatwaves.",
+          "source": "https://www.sciencedirect.com/science/article/pii/S167129271830080X"
+        },
+        "human_rights": {
+          "description": "Human rights issues are prevalent, particularly in rural areas where workers often face poor working conditions and low wages.",
+          "impact": "High impact due to widespread labor rights violations.",
+          "source": "https://www.hrw.org/world-report/2021/country-chapters/china-and-tibet"
+        }
+      },
+      "Spain": {
+        "new_pests": {
+          "description": "Warmer and more humid conditions are leading to increased pest pressures, especially from whiteflies and spider mites.",
+          "impact": "Crop losses from pest damage could exceed 15% in certain regions.",
+          "source": "https://www.frontiersin.org/articles/10.3389/fenvs.2020.00012/full"
+        },
+        "labor_productivity": {
+          "description": "High temperatures reduce labor efficiency, particularly during critical harvesting periods.",
+          "impact": "Productivity could decrease by up to 10-15%.",
+          "source": "https://www.eea.europa.eu/publications/climate-change-impacts-and-adaptation-2"
+        },
+        "untimely_rain_drought": {
+          "description": "Drought conditions, followed by heavy rains, are disrupting the tomato growing cycle.",
+          "impact": "Irrigation challenges could reduce yields by up to 30% in dry years.",
+          "source": "https://www.frontiersin.org/articles/10.3389/fpls.2017.01477/full"
+        },
+        "too_much_heat": {
+          "description": "Temperatures above 40°C during key growing months are leading to significant reductions in tomato yields.",
+          "impact": "Tomato yields could drop by 20% by 2030 due to increased nighttime temperatures.",
+          "source": "https://www.mdpi.com/2073-4395/10/9/1360"
+        },
+        "human_rights": {
+          "description": "Labor rights are generally better protected, but migrant workers in agriculture still face exploitation, particularly in southern Spain.",
+          "impact": "Moderate impact due to existing protections but ongoing challenges.",
+          "source": "https://www.amnesty.org/en/documents/eur41/1799/2015/en/"
+        }
+      },
+      "Turkey": {
+        "new_pests": {
+          "description": "The warmer climate is causing new pest species to emerge, threatening tomato yields.",
+          "impact": "Yield reductions could be as high as 20% due to pest infestations.",
+          "source": "https://www.nature.com/articles/s41598-020-70816-2"
+        },
+        "labor_productivity": {
+          "description": "High temperatures are reducing labor efficiency, particularly in less mechanized farming areas.",
+          "impact": "Productivity could decrease by 10-15% due to heat stress.",
+          "source": "https://www.mdpi.com/2227-7099/7/1/12"
+        },
+        "untimely_rain_drought": {
+          "description": "Turkey faces both untimely rains and severe droughts, severely impacting tomato production.",
+          "impact": "Yield losses could reach 30% due to these climatic challenges.",
+          "source": "https://www.frontiersin.org/articles/10.3389/fenvs.2020.00012/full"
+        },
+        "too_much_heat": {
+          "description": "Temperatures above 40°C during pollination periods are leading to reduced fruit set and lower yields.",
+          "impact": "Up to 25% crop loss has been recorded in extreme heat years.",
+          "source": "https://www.sciencedirect.com/science/article/pii/S026121941730097X"
+        },
+        "human_rights": {
+          "description": "Human rights issues are significant, especially in rural farming areas where workers often face poor working conditions and low wages.",
+          "impact": "High impact due to widespread labor rights violations.",
+          "source": "https://www.hrw.org/world-report/2021/country-chapters/turkey"
+        }
+      }
+    }
+  }
+  

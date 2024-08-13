@@ -1,0 +1,34 @@
+/* index.css */
+
+/* Resets some basic elements to remove browser-specific styles */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Example global styles */
+  body {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Flexbox centering for the root element */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Global link styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
