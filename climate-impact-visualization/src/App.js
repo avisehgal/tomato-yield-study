@@ -9,6 +9,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import WorldFlag from 'react-world-flags';
+import '@fontsource/source-sans-pro';
 
 const countryFlags = {
   California: 'US', // US flag for California
@@ -32,7 +33,7 @@ function App() {
       minHeight: '100vh', 
       display: 'flex', 
       flexDirection: 'column', 
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: '"Source Sans Pro", sans-serif',
       margin: 0, 
       padding: 0,
       width: '100%',
@@ -51,7 +52,7 @@ function App() {
             component="div" 
             sx={{ 
               flexGrow: 1, 
-              fontFamily: '"Roboto", sans-serif', 
+              fontFamily: '"Source Sans Pro", sans-serif',
               fontWeight: 'bold',
               textAlign: 'center'  // Center align the text
             }}
@@ -102,7 +103,7 @@ function App() {
             md: 'repeat(3, 1fr)', // 3 columns for medium screens
             lg: 'repeat(4, 1fr)', // 4 columns for large screens
           },
-          gap: 4,
+          gap: 8,
           justifyItems: 'center',
           alignItems: 'center',
           padding: '10px', // Add padding for breathing space

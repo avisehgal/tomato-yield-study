@@ -1,6 +1,6 @@
 {
   "regions":{
-     "California": {
+    "California": {
       "new_pests": {
         "description": "Warmer and wetter conditions are contributing to an increase in pest populations, particularly pests like Fusarium and the tomato leaf miner (Tuta absoluta), which are causing significant damage to tomato crops. The changing climate also creates favorable conditions for new pests, exacerbating the threat to tomato quality and yield in California's major tomato-producing regions.",
         "impact": "Tomato quality could decline by 10-15% in impacted fields due to increased pest infestations.",
@@ -63,9 +63,35 @@
           "Promote fair trade certifications for agricultural products.",
           "Support worker unions and advocacy groups."
         ]
+      },
+      "water_scarcity": {
+        "description": "Severe drought conditions are becoming more frequent in California, leading to significant water scarcity. This has a direct impact on tomato yields, as water is critical during the growing season. The combination of higher temperatures and less reliable water availability is making it increasingly difficult for farmers to sustain production.",
+        "impact": "Water shortages could reduce tomato yields by up to 25%.",
+        "source": [
+          "Nature",
+          "USGS"
+        ],
+        "potential_remedies": [
+          "Invest in advanced water-saving irrigation techniques such as drip and precision irrigation.",
+          "Increase the use of recycled water for agricultural purposes.",
+          "Enhance groundwater management to ensure long-term water availability."
+        ]
+      },
+      "wildfires": {
+        "description": "The increasing frequency and intensity of wildfires in California pose a significant threat to agricultural production, including tomato farming. Wildfires not only destroy crops but also affect air quality, which can further stress tomato plants and reduce yields. Additionally, the smoke from wildfires can lead to labor disruptions, further impacting productivity.",
+        "impact": "Wildfires could cause up to a 20% reduction in tomato yields in the worst-affected areas.",
+        "source": [
+          "CalFire",
+          "USDA Forest Service"
+        ],
+        "potential_remedies": [
+          "Implement fire-resistant farming practices, such as creating buffer zones and using less flammable plant varieties.",
+          "Improve emergency response systems for wildfire threats.",
+          "Promote land management practices that reduce the risk of wildfires."
+        ]
       }
     },
-     "China": {
+    "China": {
       "new_pests": {
         "description": "Rising temperatures are fostering the spread of pests such as whiteflies, which are particularly damaging to tomato crops. These pests thrive in the increasingly warm and humid conditions found in many of China's tomato-growing regions. The presence of pests like whiteflies and leaf curl viruses is becoming more frequent, leading to significant challenges in maintaining healthy tomato crops.",
         "impact": "Tomato yields may decline by 10-15% due to increased pest infestations and disease prevalence.",
@@ -127,6 +153,42 @@
           "International pressure and trade sanctions on human rights violators.",
           "Support NGOs and civil society organizations working on labor rights.",
           "Enhance transparency in supply chains to ensure fair labor practices."
+        ]
+      },
+      "water_scarcity": {
+        "description": "China faces significant water scarcity challenges, particularly in the northern regions where water availability is critical for tomato cultivation. The competition for water resources between agriculture and other sectors is intensifying, leading to severe constraints on irrigation and reduced crop yields.",
+        "impact": "Water shortages could lead to a reduction in tomato yields by up to 30% in severely affected regions.",
+        "source": [
+          "Nature"
+        ],
+        "potential_remedies": [
+          "Invest in water-saving irrigation technologies like drip irrigation.",
+          "Implement water recycling and reuse in agricultural practices.",
+          "Promote crop varieties that require less water."
+        ]
+      },
+      "wildfires": {
+        "description": "The increasing frequency and intensity of wildfires in China, particularly in the northeastern regions, are posing a significant threat to agriculture. These wildfires are not only destroying crops but also degrading the quality of the soil, making it less suitable for future cultivation.",
+        "impact": "Wildfires could lead to the loss of up to 15% of arable land in affected regions, reducing overall agricultural productivity.",
+        "source": [
+          "Frontiers"
+        ],
+        "potential_remedies": [
+          "Implement firebreaks and controlled burns to reduce wildfire risk.",
+          "Increase forest management and reforestation efforts.",
+          "Invest in fire-resistant crop varieties."
+        ]
+      },
+      "yield_variability": {
+        "description": "As global temperatures rise, yield variability for tomatoes in China is likely to increase, similar to other crops. This means that there will be greater fluctuations in tomato yields year-to-year, making it challenging to predict and plan for production.",
+        "impact": "Yield variability could lead to unpredictable supply and pricing, with potential yield reductions of up to 30% in extreme cases.",
+        "source": [
+          "ScienceDirect"
+        ],
+        "potential_remedies": [
+          "Develop and implement crop insurance schemes to protect farmers from yield variability.",
+          "Invest in research and development of more resilient tomato varieties.",
+          "Enhance forecasting and modeling to better predict yield outcomes."
         ]
       }
     },
@@ -193,6 +255,31 @@
           "Promote fair trade and ethical labor practices.",
           "Support organizations working to protect migrant workers' rights."
         ]
+      },
+      "wildfire_risk": {
+        "description": "The projected rise in temperatures and decrease in moisture are expected to increase the length of wildfire seasons in Turkey. This poses a significant threat to agricultural lands, particularly those with high vegetation density, such as tomato fields. The increasing wildfire danger could lead to destruction of crops and reduced yields.",
+        "impact": "Up to 15% of agricultural land could be affected by wildfires annually if current trends continue.",
+        "source": [
+          "Nature"
+        ],
+        "potential_remedies": [
+          "Implement firebreaks and controlled burns to reduce fuel load.",
+          "Invest in early warning systems and rapid response strategies for wildfires.",
+          "Promote the use of fire-resistant crop varieties."
+        ]
+      },
+      "water_scarcity": {
+        "description": "Water scarcity is becoming a critical issue in Turkey, particularly in the agricultural sector. As climate change leads to more prolonged droughts and decreased river flow, the availability of water for irrigation is becoming increasingly uncertain. This is particularly challenging for water-intensive crops like tomatoes.",
+        "impact": "Water scarcity could lead to a 20% reduction in tomato yields if not addressed.",
+        "source": [
+          "FAO",
+          "World Bank"
+        ],
+        "potential_remedies": [
+          "Adopt water-efficient irrigation technologies such as drip irrigation.",
+          "Improve water storage and management infrastructure.",
+          "Promote policies that encourage sustainable water use in agriculture."
+        ]
       }
     },
     "Spain": {
@@ -258,6 +345,32 @@
           "Improve labor conditions and enforce fair wages.",
           "Promote certifications that ensure ethical labor practices.",
           "Support initiatives that provide better housing and services for seasonal workers."
+        ]
+      },
+      "increased_fire_risk": {
+        "description": "As climate change continues to affect Spain, the country is experiencing a generalized decline in fuel moisture, leading to longer fire seasons and an increased risk of wildfires. This is particularly concerning for major agricultural areas that serve as significant carbon sinks.",
+        "impact": "Increased wildfire danger could result in substantial losses in tomato production and damage to agricultural infrastructure.",
+        "source": [
+          "AVOID Programme",
+          "Nature Communications"
+        ],
+        "potential_remedies": [
+          "Implement controlled burns to reduce fuel loads.",
+          "Enhance firebreaks around critical agricultural areas.",
+          "Invest in early detection and rapid response systems for wildfires."
+        ]
+      },
+      "reduction_in_arable_land": {
+        "description": "Climate change is making large areas of Spain less suitable for agricultural production. Warmer and more arid conditions are predicted to lead to a significant reduction in the amount of land available for cultivating tomatoes.",
+        "impact": "The reduction in arable land could lead to a decrease in tomato production by up to 30%, affecting both domestic supply and exports.",
+        "source": [
+          "AVOID Programme",
+          "Cambridge University Press"
+        ],
+        "potential_remedies": [
+          "Shift cultivation to regions less affected by climate change.",
+          "Improve soil management practices to maintain arability.",
+          "Invest in greenhouse technology to protect crops from harsh outdoor conditions."
         ]
       }
     }
