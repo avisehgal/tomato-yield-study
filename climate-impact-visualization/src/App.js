@@ -16,8 +16,10 @@ function App() {
     setSelectedRegion(newValue);
   };
 
+  const regionData = data.regions[selectedRegion];
+
   return (
-    <div style={{ backgroundColor: '#f5f5f5', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ backgroundColor: '#2F4F4F', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <AppBar position="static" style={{ backgroundColor: '#3f51b5' }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -43,9 +45,26 @@ function App() {
         </Tabs>
       </AppBar>
 
-      <Container maxWidth="md" sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <Box sx={{  flexGrow: 1, display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <RegionCard region={selectedRegion} data={data.regions[selectedRegion]} />
+      <Container maxWidth="lg" sx={{ paddingTop: 4 }}>
+        <Box sx={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(4, 1fr)', // 4 columns
+          gridTemplateRows: 'repeat(5, 1fr)', // 5 rows
+          gap: 2,
+          justifyItems: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          maxHeight: '80vh', // Adjust the height to fit within the viewport
+        }}>
+          {regionData ? (
+            Object.entries(regionData).map(([factor, details]) => (
+              <RegionCard key={factor} region={factor} data={details} />
+            ))
+          ) : (
+            <Typography variant="h6" style={{ color: '#ffffff' }}>
+              No data available for the selected region.
+            </Typography>
+          )}
         </Box>
       </Container>
     </div>

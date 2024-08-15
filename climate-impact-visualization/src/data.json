@@ -1,113 +1,266 @@
 {
-    "regions": {
-      "California": {
-        "new_pests": {
-          "description": "Warmer and wetter conditions are increasing the prevalence of pests such as Fusarium, leading to a significant decline in tomato quality.",
-          "impact": "Quality decline in tomatoes by 10-15% in impacted fields.",
-          "source": "https://link.springer.com/article/10.1007/s42398-021-00133-w, https://www.mdpi.com/2071-1050/14/19/12421"
-        },
-        "labor_productivity": {
-          "description": "High temperatures reduce the efficiency of farm labor, especially in peak summer months.",
-          "impact": "Productivity could decrease by 20% during peak heat periods.",
-          "source": "https://www.ers.usda.gov/webdocs/publications/80301/err-201.pdf"
-        },
-        "untimely_rain_drought": {
-          "description": "Severe drought conditions are leading to groundwater decline, which cannot be compensated with irrigation.",
-          "impact": "Yield declines due to drought could reach up to 30%.",
-          "source": "https://www.sciencedirect.com/science/article/pii/S0095069615000240"
-        },
-        "too_much_heat": {
-          "description": "Extended periods of extreme heat above 100°F are stressing tomato plants, affecting fruit set and quality.",
-          "impact": "Tomato yield could decrease by up to 10% by 2050 due to increased temperatures.",
-          "source": "https://www.climatecentral.org/news/california-agriculture-heat-impact"
-        },
-        "human_rights": {
-          "description": "Although less of an issue compared to other regions, the agricultural sector in California still faces challenges related to fair labor practices, especially for migrant workers.",
-          "impact": "Labor rights issues, while present, are less severe compared to regions like China and Turkey.",
-          "source": "https://www.nytimes.com/2020/07/31/us/immigration-farmworkers.html"
-        }
+  "regions":{
+     "California": {
+      "new_pests": {
+        "description": "Warmer and wetter conditions are contributing to an increase in pest populations, particularly pests like Fusarium and the tomato leaf miner (Tuta absoluta), which are causing significant damage to tomato crops. The changing climate also creates favorable conditions for new pests, exacerbating the threat to tomato quality and yield in California's major tomato-producing regions.",
+        "impact": "Tomato quality could decline by 10-15% in impacted fields due to increased pest infestations.",
+        "source": [
+          "Springer",
+          "MDPI"
+        ],
+        "potential_remedies": [
+          "Implement integrated pest management (IPM) strategies.",
+          "Use pest-resistant tomato varieties.",
+          "Promote biological control agents like beneficial nematodes."
+        ]
       },
-      "China": {
-        "new_pests": {
-          "description": "Rising temperatures are fostering the spread of pests such as whiteflies, which are particularly damaging to tomato crops.",
-          "impact": "Tomato yields may decline by 10-15% due to pest infestations.",
-          "source": "https://www.fao.org/3/cb4769en/cb4769en.pdf, https://theconversation.com/what-a-warmer-wetter-world-means-for-insects-and-what-they-eat-102345"
-        },
-        "labor_productivity": {
-          "description": "Extreme heat reduces labor efficiency, especially in rural farming areas that rely heavily on manual labor.",
-          "impact": "A 15% drop in productivity has been observed during peak summer.",
-          "source": "https://www.mdpi.com/2071-1050/12/19/7929"
-        },
-        "untimely_rain_drought": {
-          "description": "China faces increased variability in precipitation, leading to both untimely rains and prolonged droughts, disrupting tomato cultivation.",
-          "impact": "Yield losses of up to 20% in certain regions.",
-          "source": "https://www.frontiersin.org/articles/10.3389/fpls.2019.00867/full"
-        },
-        "too_much_heat": {
-          "description": "Prolonged periods of extreme heat during the growing season are causing significant stress to tomato plants.",
-          "impact": "Yield losses could reach up to 25% in areas experiencing frequent heatwaves.",
-          "source": "https://www.sciencedirect.com/science/article/pii/S167129271830080X"
-        },
-        "human_rights": {
-          "description": "Human rights issues are prevalent, particularly in rural areas where workers often face poor working conditions and low wages.",
-          "impact": "High impact due to widespread labor rights violations.",
-          "source": "https://www.hrw.org/world-report/2021/country-chapters/china-and-tibet"
-        }
+      "labor_productivity": {
+        "description": "Increasing temperatures, particularly during peak summer months, are reducing the efficiency of farm labor. High heat stress affects the ability of workers to perform manual labor effectively, which is critical in regions that heavily rely on human labor for tomato harvesting.",
+        "impact": "Productivity could decrease by 15-20% during peak heat periods.",
+        "source": [
+          "USDA ERS",
+          "USDA Climate Hubs"
+        ],
+        "potential_remedies": [
+          "Shift work hours to cooler parts of the day.",
+          "Increase mechanization to reduce reliance on manual labor.",
+          "Provide cooling stations and adequate hydration for workers."
+        ]
       },
-      "Spain": {
-        "new_pests": {
-          "description": "Warmer and more humid conditions are leading to increased pest pressures, especially from whiteflies and spider mites.",
-          "impact": "Crop losses from pest damage could exceed 15% in certain regions.",
-          "source": "https://www.frontiersin.org/articles/10.3389/fenvs.2020.00012/full"
-        },
-        "labor_productivity": {
-          "description": "High temperatures reduce labor efficiency, particularly during critical harvesting periods.",
-          "impact": "Productivity could decrease by up to 10-15%.",
-          "source": "https://www.eea.europa.eu/publications/climate-change-impacts-and-adaptation-2"
-        },
-        "untimely_rain_drought": {
-          "description": "Drought conditions, followed by heavy rains, are disrupting the tomato growing cycle.",
-          "impact": "Irrigation challenges could reduce yields by up to 30% in dry years.",
-          "source": "https://www.frontiersin.org/articles/10.3389/fpls.2017.01477/full"
-        },
-        "too_much_heat": {
-          "description": "Temperatures above 40°C during key growing months are leading to significant reductions in tomato yields.",
-          "impact": "Tomato yields could drop by 20% by 2030 due to increased nighttime temperatures.",
-          "source": "https://www.mdpi.com/2073-4395/10/9/1360"
-        },
-        "human_rights": {
-          "description": "Labor rights are generally better protected, but migrant workers in agriculture still face exploitation, particularly in southern Spain.",
-          "impact": "Moderate impact due to existing protections but ongoing challenges.",
-          "source": "https://www.amnesty.org/en/documents/eur41/1799/2015/en/"
-        }
+      "untimely_rain_drought": {
+        "description": "California's climate is increasingly characterized by variability in precipitation, leading to both untimely rains and prolonged droughts. These conditions are stressing tomato plants, affecting their growth and leading to reduced yields. The frequent droughts are particularly damaging as they exacerbate water scarcity, a critical issue for the state's agriculture.",
+        "impact": "Yield declines could reach up to 30% due to the combined effects of drought and untimely rains.",
+        "source": [
+          "ScienceDirect"
+        ],
+        "potential_remedies": [
+          "Invest in drought-resistant crop varieties.",
+          "Implement water conservation and efficient irrigation techniques like drip irrigation.",
+          "Enhance soil moisture retention through mulching and organic farming practices."
+        ]
       },
-      "Turkey": {
-        "new_pests": {
-          "description": "The warmer climate is causing new pest species to emerge, threatening tomato yields.",
-          "impact": "Yield reductions could be as high as 20% due to pest infestations.",
-          "source": "https://www.nature.com/articles/s41598-020-70816-2"
-        },
-        "labor_productivity": {
-          "description": "High temperatures are reducing labor efficiency, particularly in less mechanized farming areas.",
-          "impact": "Productivity could decrease by 10-15% due to heat stress.",
-          "source": "https://www.mdpi.com/2227-7099/7/1/12"
-        },
-        "untimely_rain_drought": {
-          "description": "Turkey faces both untimely rains and severe droughts, severely impacting tomato production.",
-          "impact": "Yield losses could reach 30% due to these climatic challenges.",
-          "source": "https://www.frontiersin.org/articles/10.3389/fenvs.2020.00012/full"
-        },
-        "too_much_heat": {
-          "description": "Temperatures above 40°C during pollination periods are leading to reduced fruit set and lower yields.",
-          "impact": "Up to 25% crop loss has been recorded in extreme heat years.",
-          "source": "https://www.sciencedirect.com/science/article/pii/S026121941730097X"
-        },
-        "human_rights": {
-          "description": "Human rights issues are significant, especially in rural farming areas where workers often face poor working conditions and low wages.",
-          "impact": "High impact due to widespread labor rights violations.",
-          "source": "https://www.hrw.org/world-report/2021/country-chapters/turkey"
-        }
+      "too_much_heat": {
+        "description": "Extended periods of extreme heat, particularly those above 100°F, are stressing tomato plants. The heat affects fruit set, quality, and overall yield, pushing tomato production out of its optimal temperature range. This is particularly concerning for regions like the Central Valley, where high heat days are becoming more common.",
+        "impact": "Tomato yield could decrease by up to 10-15% by 2050 due to increased temperatures.",
+        "source": [
+          "Climate Central",
+          "Springer"
+        ],
+        "potential_remedies": [
+          "Implement shade netting to reduce heat stress on plants.",
+          "Use heat-tolerant tomato varieties.",
+          "Adjust planting schedules to avoid peak heat periods."
+        ]
+      },
+      "human_rights": {
+        "description": "The agricultural sector in California, while less affected compared to regions like China and Turkey, still faces significant challenges related to labor practices. Migrant workers, who form a substantial part of the agricultural workforce, often face poor working conditions, low wages, and lack of adequate protection under labor laws.",
+        "impact": "Labor rights issues, while present, can lead to reduced productivity and increased turnover, which ultimately impacts tomato yield.",
+        "source": [
+          "New York Times"
+        ],
+        "potential_remedies": [
+          "Strengthen enforcement of labor rights laws.",
+          "Promote fair trade certifications for agricultural products.",
+          "Support worker unions and advocacy groups."
+        ]
+      }
+    },
+     "China": {
+      "new_pests": {
+        "description": "Rising temperatures are fostering the spread of pests such as whiteflies, which are particularly damaging to tomato crops. These pests thrive in the increasingly warm and humid conditions found in many of China's tomato-growing regions. The presence of pests like whiteflies and leaf curl viruses is becoming more frequent, leading to significant challenges in maintaining healthy tomato crops.",
+        "impact": "Tomato yields may decline by 10-15% due to increased pest infestations and disease prevalence.",
+        "source": [
+          "FAO",
+          "The Conversation"
+        ],
+        "potential_remedies": [
+          "Adopt crop rotation to disrupt pest life cycles.",
+          "Implement organic pesticides to reduce chemical dependency.",
+          "Promote habitat for natural predators like ladybugs."
+        ]
+      },
+      "labor_productivity": {
+        "description": "Extreme heat during the summer months in China is significantly reducing labor efficiency, especially in rural farming areas that rely heavily on manual labor. This is compounded by high humidity levels, which exacerbate heat stress, making it difficult for workers to maintain productivity. The increasing frequency of heatwaves is expected to further challenge labor productivity in agriculture.",
+        "impact": "A 15-20% drop in productivity has been observed during peak summer due to heat stress.",
+        "source": [
+          "MDPI",
+          "Frontiers"
+        ],
+        "potential_remedies": [
+          "Increase mechanization and automation in agriculture.",
+          "Provide better protective gear and cooling systems for workers.",
+          "Implement community-based water and shade systems in fields."
+        ]
+      },
+      "untimely_rain_drought": {
+        "description": "China's tomato production is being increasingly affected by climate variability, with regions experiencing both untimely rains and prolonged droughts. These extreme weather events disrupt the growth cycle of tomatoes, leading to significant variability in yields. The challenge is particularly acute in areas prone to both excessive rainfall during critical growth periods and severe water shortages.",
+        "impact": "Yield losses of up to 20-25% are expected in regions severely affected by these climatic challenges.",
+        "source": [
+          "Frontiers"
+        ],
+        "potential_remedies": [
+          "Develop early-warning systems for extreme weather events.",
+          "Enhance water storage and distribution infrastructure.",
+          "Invest in research for drought-resistant crop varieties."
+        ]
+      },
+      "too_much_heat": {
+        "description": "The increasing frequency of heatwaves, particularly during the critical flowering and fruiting stages, is putting severe stress on tomato plants. Prolonged periods of high temperatures, especially when combined with high humidity, lead to reduced fruit set, lower quality, and smaller yields. This is particularly problematic in greenhouse-grown tomatoes, where managing heat and humidity levels is more challenging.",
+        "impact": "Yield losses could reach up to 25% in areas experiencing frequent heatwaves.",
+        "source": [
+          "ScienceDirect",
+          "Frontiers"
+        ],
+        "potential_remedies": [
+          "Use mulching to retain soil moisture and reduce ground temperature.",
+          "Implement localized cooling systems for sensitive crops.",
+          "Use reflective mulches or films to reduce heat absorption."
+        ]
+      },
+      "human_rights": {
+        "description": "Human rights issues remain a significant concern in China's agricultural sector, particularly in rural areas where workers often face poor working conditions, low wages, and limited legal protections. The ongoing pressure on workers due to climate-induced productivity losses further exacerbates these issues, leading to higher turnover and lower overall productivity.",
+        "impact": "High impact due to widespread labor rights violations, leading to decreased productivity and increased turnover.",
+        "source": [
+          "Human Rights Watch"
+        ],
+        "potential_remedies": [
+          "International pressure and trade sanctions on human rights violators.",
+          "Support NGOs and civil society organizations working on labor rights.",
+          "Enhance transparency in supply chains to ensure fair labor practices."
+        ]
+      }
+    },
+     "Turkey": {
+      "new_pests": {
+        "description": "Climate change is facilitating the emergence of new pests, such as the tomato leaf miner (Tuta absoluta), which are causing significant damage to tomato crops in Turkey. The warmer temperatures and prolonged growing seasons are leading to higher pest populations and more frequent infestations, which are challenging to control using conventional methods.",
+        "impact": "Tomato yield losses due to new pest infestations could reach up to 20%.",
+        "source": [
+          "ScienceDirect",
+          "Yale E360"
+        ],
+        "potential_remedies": [
+          "Adopt integrated pest management practices.",
+          "Use biological control agents like predatory insects.",
+          "Develop and use pest-resistant tomato varieties."
+        ]
+      },
+      "labor_productivity": {
+        "description": "High temperatures, particularly during the peak summer season, are significantly reducing labor productivity in Turkey's agricultural sector. The extreme heat not only affects the health and efficiency of workers but also leads to reduced working hours, which directly impacts the ability to maintain and harvest crops like tomatoes.",
+        "impact": "Labor productivity may decrease by 15-20% during extreme heat periods.",
+        "source": [
+          "ResearchGate"
+        ],
+        "potential_remedies": [
+          "Shift work hours to cooler parts of the day.",
+          "Improve working conditions by providing shade and water breaks.",
+          "Increase mechanization to reduce reliance on manual labor."
+        ]
+      },
+      "untimely_rain_drought": {
+        "description": "Turkey is experiencing severe climatic variability, with untimely heavy rains and prolonged droughts becoming more frequent. These extreme weather events are severely impacting tomato production, especially in the key agricultural regions. The lack of water during critical growth phases and excessive water during others disrupt the growth cycle, leading to significant yield variability.",
+        "impact": "Yield losses due to these climate challenges could reach up to 30%.",
+        "source": [
+          "Springer",
+          "AGBI"
+        ],
+        "potential_remedies": [
+          "Invest in advanced irrigation systems to better manage water use.",
+          "Improve water conservation techniques.",
+          "Develop drought-resistant tomato varieties."
+        ]
+      },
+      "too_much_heat": {
+        "description": "Extended periods of extreme heat are placing significant stress on tomato plants, which are highly sensitive to temperature fluctuations. This heat stress affects fruit set and quality, leading to reduced yields. The increasing frequency and intensity of heatwaves in Turkey's tomato-growing regions are making it increasingly difficult to maintain healthy crops.",
+        "impact": "Yield losses due to heat stress could reach up to 25%.",
+        "source": [
+          "Tandfonline",
+          "Yale E360"
+        ],
+        "potential_remedies": [
+          "Use shade nets to protect plants from excessive heat.",
+          "Implement heat-resistant tomato varieties.",
+          "Adjust planting and harvest schedules to avoid the hottest periods."
+        ]
+      },
+      "human_rights": {
+        "description": "Migrant labor in Turkey's agricultural sector faces significant challenges, including poor working conditions, lack of legal protections, and inadequate compensation. These challenges are exacerbated by climate-induced productivity losses, which place additional pressure on the already vulnerable workforce.",
+        "impact": "Human rights issues in agriculture can lead to labor shortages and lower productivity.",
+        "source": [
+          "ResearchGate"
+        ],
+        "potential_remedies": [
+          "Strengthen labor laws and their enforcement.",
+          "Promote fair trade and ethical labor practices.",
+          "Support organizations working to protect migrant workers' rights."
+        ]
+      }
+    },
+    "Spain": {
+      "new_pests": {
+        "description": "Warmer temperatures and changes in precipitation patterns are leading to the spread of new pests like the Mediterranean fruit fly, which poses a significant threat to tomato production in Spain. These pests thrive in the changing climate, and their increased prevalence is exacerbating the challenges faced by farmers.",
+        "impact": "Tomato yields may decline by up to 15% due to increased pest pressure and disease transmission associated with these pests.",
+        "source": [
+          "ScienceDirect",
+          "The Olive Press"
+        ],
+        "potential_remedies": [
+          "Adopt sustainable pest management strategies.",
+          "Encourage the use of natural predators to control pest populations.",
+          "Develop and plant pest-resistant tomato varieties."
+        ]
+      },
+      "labor_productivity": {
+        "description": "Rising temperatures are reducing the efficiency of agricultural labor in Spain, particularly in the southern regions. The intense heat during the peak growing seasons makes it difficult for laborers to maintain productivity levels, which is crucial for timely harvesting and maintenance of tomato crops.",
+        "impact": "Labor productivity could fall by 10-15% during heatwaves due to increased heat stress on workers.",
+        "source": [
+          "SAGE Journals",
+          "Wikipedia"
+        ],
+        "potential_remedies": [
+          "Adapt working hours to cooler parts of the day.",
+          "Improve conditions for outdoor laborers, including providing adequate hydration and shade.",
+          "Increase the use of automation in farming to reduce dependence on manual labor."
+        ]
+      },
+      "untimely_rain_drought": {
+        "description": "Spain is facing increased frequency of both drought and untimely rains, which are disrupting the growth cycle of tomatoes. These extreme weather events are leading to significant variability in production, with some regions experiencing severe water shortages while others are hit by heavy rainfall at critical times.",
+        "impact": "Yield variability due to these factors can result in losses of up to 25% in tomato production.",
+        "source": [
+          "Ministry of Foreign Affairs and Trade (New Zealand)",
+          "Cambridge University Press"
+        ],
+        "potential_remedies": [
+          "Invest in water-efficient irrigation systems.",
+          "Enhance soil moisture retention techniques, such as mulching.",
+          "Select and cultivate drought-resistant tomato varieties."
+        ]
+      },
+      "too_much_heat": {
+        "description": "Extreme heat during the growing season is becoming more common in Spain, stressing tomato plants and reducing yields. The heatwaves, which are predicted to increase in frequency and intensity, are particularly damaging during the flowering and fruiting stages of tomato growth, leading to lower fruit set and quality.",
+        "impact": "Heat stress could lead to a 20% reduction in tomato yields.",
+        "source": [
+          "Frontiers",
+          "The Olive Press"
+        ],
+        "potential_remedies": [
+          "Use shade covers to protect plants during the hottest parts of the day.",
+          "Develop and use heat-tolerant tomato varieties.",
+          "Adjust planting schedules to avoid the peak heat period."
+        ]
+      },
+      "human_rights": {
+        "description": "Seasonal agricultural workers in Spain, often migrants, face difficult working conditions, including low wages and long hours. These challenges are exacerbated by the climate-induced stresses on agricultural productivity, which can lead to increased exploitation and poorer working conditions for laborers.",
+        "impact": "Labor issues can lead to decreased productivity and increased turnover, negatively affecting the overall agricultural output.",
+        "source": [
+          "Human Rights Watch"
+        ],
+        "potential_remedies": [
+          "Improve labor conditions and enforce fair wages.",
+          "Promote certifications that ensure ethical labor practices.",
+          "Support initiatives that provide better housing and services for seasonal workers."
+        ]
       }
     }
-  }
+}
+}
   
