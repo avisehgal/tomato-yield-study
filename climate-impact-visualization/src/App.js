@@ -36,7 +36,7 @@ function App() {
       margin: 0, 
       padding: 0,
       width: '100%',
-      overflowX: 'hidden'
+      overflowX: 'hidden', // Prevent horizontal overflow
     }}>
       <AppBar 
         position="static" 
@@ -46,19 +46,18 @@ function App() {
         }}
       >
         <Toolbar>
-        <Typography 
-          variant="h5" 
-          component="div" 
-          sx={{ 
-            flexGrow: 1, 
-            fontFamily: '"Roboto", sans-serif', 
-            fontWeight: 'bold',
-            textAlign: 'center'  // Center align the text
-          }}
-        >
-          Climate Impact Dashboard
-        </Typography>
-
+          <Typography 
+            variant="h5" 
+            component="div" 
+            sx={{ 
+              flexGrow: 1, 
+              fontFamily: '"Roboto", sans-serif', 
+              fontWeight: 'bold',
+              textAlign: 'center'  // Center align the text
+            }}
+          >
+            Climate Impact Dashboard
+          </Typography>
         </Toolbar>
         <Tabs
           value={selectedRegion}
@@ -84,11 +83,25 @@ function App() {
         </Tabs>
       </AppBar>
 
-      <Container maxWidth="lg" sx={{ paddingTop: 4, paddingBottom: 4 }}>
+      <Container 
+        maxWidth="lg" 
+        sx={{ 
+          paddingTop: 4, 
+          paddingBottom: 4,
+          flexGrow: 1, // Allow the container to grow and shrink with the content
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center',
+        }}
+      >
         <Box sx={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(3, 1fr)', // 3 columns
-          gridTemplateRows: 'repeat(5, 1fr)', // 5 rows
+          gridTemplateColumns: {
+            xs: 'repeat(1, 1fr)', // 1 column for extra small screens
+            sm: 'repeat(2, 1fr)', // 2 columns for small screens
+            md: 'repeat(3, 1fr)', // 3 columns for medium screens
+            lg: 'repeat(4, 1fr)', // 4 columns for large screens
+          },
           gap: 4,
           justifyItems: 'center',
           alignItems: 'center',
