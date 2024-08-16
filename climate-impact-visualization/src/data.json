@@ -89,7 +89,21 @@
           "Improve emergency response systems for wildfire threats.",
           "Promote land management practices that reduce the risk of wildfires."
         ]
-      }
+      },
+      "yield_variability": {
+        "description": "As global temperatures rise, yield variability for tomatoes in California is likely to increase. This means that there will be greater fluctuations in tomato yields year-to-year, making it challenging to predict and plan for production.",
+        "impact": "Yield variability could lead to unpredictable supply and pricing, with potential yield reductions of up to 30% in extreme cases.",
+        "source": [
+          "Systemic, Interviews, Internal Analysis",
+          "Tomato News"
+        ],
+        "potential_remedies": [
+          "Develop and implement crop insurance schemes to protect farmers from yield variability.",
+          "Invest in research and development of more resilient tomato varieties.",
+          "Enhance forecasting and modeling to better predict yield outcomes."
+        ]
+}
+
     },
     "China": {
       "new_pests": {
@@ -280,7 +294,21 @@
           "Improve water storage and management infrastructure.",
           "Promote policies that encourage sustainable water use in agriculture."
         ]
-      }
+      },
+      "yield_variability": {
+        "description": "As global temperatures rise, yield variability for tomatoes in Turkey is expected to increase. This variability means there will be greater fluctuations in tomato yields year-to-year, making it challenging to predict and plan for production. Climate variability accounts for a significant portion of the observed yield changes, and this impact is expected to worsen.",
+        "impact": "Yield variability could lead to unpredictable supply and pricing, with potential yield reductions of up to 30% in extreme cases.",
+        "source": [
+            "ScienceDirect",
+            "Nature Communications"
+        ],
+        "potential_remedies": [
+            "Develop and implement crop insurance schemes to protect farmers from yield variability.",
+            "Invest in research and development of more resilient tomato varieties.",
+            "Enhance forecasting and modeling to better predict yield outcomes."
+        ]
+    }
+
     },
     "Spain": {
       "new_pests": {
@@ -372,7 +400,21 @@
           "Improve soil management practices to maintain arability.",
           "Invest in greenhouse technology to protect crops from harsh outdoor conditions."
         ]
+      },
+      "yield_variability": {
+        "description": "As global temperatures rise, yield variability for tomatoes in Spain is likely to increase, similar to other crops. This will result in greater fluctuations in tomato yields year-to-year, making it increasingly challenging to predict and plan for production.",
+        "impact": "Yield variability could cause up to a 30% reduction in tomato production in extreme cases, which may significantly affect supply stability and pricing.",
+        "source": [
+          "Nature Communications",
+          "AVOID Programme"
+        ],
+        "potential_remedies": [
+          "Implement crop insurance schemes to protect farmers from yield variability.",
+          "Invest in research and development of more resilient tomato varieties.",
+          "Enhance forecasting and modeling to better predict yield outcomes."
+        ]
       }
+
     }
 }
 }

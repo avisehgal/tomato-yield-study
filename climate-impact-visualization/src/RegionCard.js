@@ -1,5 +1,3 @@
-// RegionCard.js
-
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -8,8 +6,6 @@ import Box from '@mui/material/Box';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import Button from '@mui/material/Button';
-import HeatStressTracking from './HeatStressTracking';
 
 // Import the Poppins font
 import '@fontsource/poppins';
@@ -27,22 +23,16 @@ const severityColor = (impact) => {
   return '#4CAF50'; // Default Green
 };
 
-const RegionCard = ({ region, data, heatStressData }) => {
+const RegionCard = ({ region, data }) => {
   const [open, setOpen] = useState(false);
-  const [heatOpen, setHeatOpen] = useState(false);
   const cardColor = severityColor(data.impact);
 
   const handleClickOpen = () => {
     setOpen(true);
   };
 
-  const handleHeatOpen = () => {
-    setHeatOpen(true);
-  };
-
   const handleClose = () => {
     setOpen(false);
-    setHeatOpen(false);
   };
 
   return (
@@ -56,7 +46,7 @@ const RegionCard = ({ region, data, heatStressData }) => {
           fontFamily: '"Poppins", sans-serif', // Apply Poppins font
         }}
       >
-        <CardContent style={{ overflow: 'hidden', textOverflow: 'ellipsis', padding: '16px' }}>
+        <CardContent style={{ padding: '16px' }}>
           <Typography 
             variant="h5" 
             component="div" 
@@ -64,29 +54,13 @@ const RegionCard = ({ region, data, heatStressData }) => {
             style={{ 
               fontWeight: 700, 
               textTransform: 'capitalize',
-              whiteSpace: 'nowrap' 
+              whiteSpace: 'normal', // Allow the text to wrap to the next line
+              overflow: 'hidden',
+              textAlign: 'center' // Center-align the text
             }}
           >
             {region.replace(/_/g, ' ')}
           </Typography>
-          <Typography 
-            variant="body2" 
-            style={{ 
-              marginBottom: '10px', 
-              overflow: 'hidden', 
-              textOverflow: 'ellipsis', 
-              display: '-webkit-box', 
-              WebkitLineClamp: 3, 
-              WebkitBoxOrient: 'vertical' 
-            }}
-          >
-            {data.description}
-          </Typography>
-          {heatStressData && (
-            <Button variant="contained" color="primary" onClick={handleHeatOpen} style={{ marginTop: '10px' }}>
-              View Heat Stress Data
-            </Button>
-          )}
         </CardContent>
       </Card>
 
@@ -179,12 +153,6 @@ const RegionCard = ({ region, data, heatStressData }) => {
           )}
         </DialogContent>
       </Dialog>
-
-      <Dialog open={heatOpen} onClose={handleClose} maxWidth="md" fullWidth>
-        <DialogContent>
-          <HeatStressTracking data={heatStressData} />
-        </DialogContent>
-      </Dialog>
     </>
   );
 };
@@ -192,7 +160,7 @@ const RegionCard = ({ region, data, heatStressData }) => {
 const styles = {
   card: {
     width: '100%',  // Responsive width
-    height: '100%', // Responsive height
+    height: '150px', // Fixed height for all cards
     margin: '10px',
     borderRadius: '20px',
     boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)', // Soft shadow for depth
@@ -202,6 +170,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    textAlign: 'center', // Center-align the text within the card
   },
 };
 
