@@ -1,3 +1,5 @@
+// RegionCard.js
+
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -6,6 +8,8 @@ import Box from '@mui/material/Box';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
+import Button from '@mui/material/Button';
+import HeatStressTracking from './HeatStressTracking';
 
 // Import the Poppins font
 import '@fontsource/poppins';
@@ -23,16 +27,22 @@ const severityColor = (impact) => {
   return '#4CAF50'; // Default Green
 };
 
-const RegionCard = ({ region, data }) => {
+const RegionCard = ({ region, data, heatStressData }) => {
   const [open, setOpen] = useState(false);
+  const [heatOpen, setHeatOpen] = useState(false);
   const cardColor = severityColor(data.impact);
 
   const handleClickOpen = () => {
     setOpen(true);
   };
 
+  const handleHeatOpen = () => {
+    setHeatOpen(true);
+  };
+
   const handleClose = () => {
     setOpen(false);
+    setHeatOpen(false);
   };
 
   return (
@@ -72,42 +82,107 @@ const RegionCard = ({ region, data }) => {
           >
             {data.description}
           </Typography>
+          {heatStressData && (
+            <Button variant="contained" color="primary" onClick={handleHeatOpen} style={{ marginTop: '10px' }}>
+              View Heat Stress Data
+            </Button>
+          )}
         </CardContent>
       </Card>
 
       <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
-        <DialogTitle 
+        <DialogTitle style={{ display: 'none' }}>
+          {region.replace(/_/g, ' ')}
+        </DialogTitle>
+        <DialogContent 
           style={{ 
             backgroundColor: cardColor, 
             color: '#ffffff', 
-            textTransform: 'capitalize',
-            fontFamily: '"Poppins", sans-serif', // Apply Poppins font
+            padding: '20px', 
+            fontFamily: '"Poppins", sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.6',
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
+            borderRadius: '15px' // Make the edges rounder
           }}
         >
-          {region.replace(/_/g, ' ')}
-        </DialogTitle>
-        <DialogContent style={{ backgroundColor: cardColor, color: '#ffffff', fontFamily: '"Poppins", sans-serif' }}>
-          <Typography variant="body2" style={{ marginBottom: '10px' }}>
+          <Typography 
+            variant="h5" 
+            style={{ 
+              marginBottom: '20px', 
+              fontWeight: 'bold', 
+              fontSize: '22px', 
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+              textTransform: 'capitalize' // Capitalize the title
+            }}
+          >
+            {region.replace(/_/g, ' ')}
+          </Typography>
+
+          <Typography 
+            variant="body1" 
+            style={{ 
+              marginBottom: '15px', 
+              fontWeight: 'normal', 
+              fontSize: '18px', 
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' 
+            }}
+          >
             {data.description}
           </Typography>
-          <Typography variant="body2" style={{ marginBottom: '10px' }}>
+
+          <Typography 
+            variant="body2" 
+            style={{ 
+              marginBottom: '10px', 
+              fontWeight: 'bold', 
+              fontSize: '18px', 
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' 
+            }}
+          >
             Impact: {data.impact}
           </Typography>
-          <Typography variant="body2" style={{ marginBottom: '10px' }}>
+
+          <Typography 
+            variant="body2" 
+            style={{ 
+              marginBottom: '20px', 
+              fontWeight: 'bold', 
+              fontSize: '18px', 
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' 
+            }}
+          >
             Source: {data.source.join(', ')}
           </Typography>
+
           {data.potential_remedies && data.potential_remedies.length > 0 && (
             <>
-              <Typography variant="h6" component="div" style={{ textDecoration: 'underline', marginBottom: '10px' }}>
+              <Typography 
+                variant="h6" 
+                component="div" 
+                style={{ 
+                  textDecoration: 'underline', 
+                  marginBottom: '15px', 
+                  fontWeight: 'bold', 
+                  fontSize: '20px', 
+                  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' 
+                }}
+              >
                 Potential Remedies:
               </Typography>
-              <Box component="ul" style={{ paddingLeft: '20px' }}>
+              <Box component="ul" style={{ paddingLeft: '20px', fontSize: '18px', textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                 {data.potential_remedies.map((remedy, index) => (
-                  <li key={index} style={{ marginBottom: '5px' }}>{remedy}</li>
+                  <li key={index} style={{ marginBottom: '10px' }}>{remedy}</li>
                 ))}
               </Box>
             </>
           )}
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={heatOpen} onClose={handleClose} maxWidth="md" fullWidth>
+        <DialogContent>
+          <HeatStressTracking data={heatStressData} />
         </DialogContent>
       </Dialog>
     </>

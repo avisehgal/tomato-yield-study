@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RegionCard from './RegionCard';
 import data from './data.json';
+import heatStressData from './HeatStressTracking.json'; // Import Heat Stress Tracking data
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -9,6 +10,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import WorldFlag from 'react-world-flags';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import HeatStressTracking from './HeatStressTracking'; // Import the HeatStressTracking component
 import '@fontsource/source-sans-pro';
 
 const countryFlags = {
@@ -20,12 +25,22 @@ const countryFlags = {
 
 function App() {
   const [selectedRegion, setSelectedRegion] = useState('California');
+  const [heatOpen, setHeatOpen] = useState(false);
 
   const handleTabChange = (event, newValue) => {
     setSelectedRegion(newValue);
   };
 
+  const handleHeatOpen = () => {
+    setHeatOpen(true);
+  };
+
+  const handleClose = () => {
+    setHeatOpen(false);
+  };
+
   const regionData = data.regions[selectedRegion];
+  const selectedHeatStressData = heatStressData[selectedRegion]?.extreme_heat_days || null; // Get heat stress data for selected region
 
   return (
     <div style={{ 
@@ -84,6 +99,22 @@ function App() {
         </Tabs>
       </AppBar>
 
+      {/* Heat Stress Button */}
+      <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
+        {selectedHeatStressData && (
+          <Button variant="contained" color="primary" onClick={handleHeatOpen}>
+            View Heat Stress Data
+          </Button>
+        )}
+      </Box>
+
+      {/* Heat Stress Dialog */}
+      <Dialog open={heatOpen} onClose={handleClose} maxWidth="md" fullWidth>
+        <DialogContent>
+          <HeatStressTracking data={selectedHeatStressData} />
+        </DialogContent>
+      </Dialog>
+
       <Container 
         maxWidth="lg" 
         sx={{ 
@@ -91,7 +122,7 @@ function App() {
           paddingBottom: 4,
           flexGrow: 1, // Allow the container to grow and shrink with the content
           display: 'flex', 
-          justifyContent: 'center', 
+          flexDirection: 'column',
           alignItems: 'center',
         }}
       >
@@ -110,7 +141,11 @@ function App() {
         }}>
           {regionData ? (
             Object.entries(regionData).map(([factor, details]) => (
-              <RegionCard key={factor} region={factor} data={details} />
+              <RegionCard 
+                key={factor} 
+                region={factor} 
+                data={details} 
+              />
             ))
           ) : (
             <Typography variant="h6" style={{ color: '#333333', textAlign: 'center' }}>
